@@ -1,0 +1,41 @@
+{
+  "name": "frigid-theme",
+  "displayName": "Frigid Theme",
+  "description": "VSCode theme inspired by the colors used on antfroze.me",
+  "version": "0.0.1",
+  "publisher": "antfroze",
+  "icon": "imgs/icon.png",
+  "scripts": {
+    "build": "npx mkdirp dist && vsce package --out dist"
+  },
+  "engines": {
+    "vscode": "^1.71.0"
+  },
+  "repository": {
+    "url": "https://github.com/Antfroze/frigid-theme"
+  },
+  "keywords": [
+    "theme",
+    "dark theme",
+    "light theme",
+    "frigid",
+    "antfroze"
+  ],
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Frigid Dark Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-color-theme.json"
+      },
+      {
+        "label": "Frigid Light Theme",
+        "uiTheme": "vs",
+        "path": "./themes/light-color-theme.json"
+      }
+    ]
+  }
+}
